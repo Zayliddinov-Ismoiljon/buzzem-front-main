@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,125 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.blogger{
+  background-image: url(../src/images/blogger-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 860px;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+
+.blogger-btn{
+  position: relative;
+  z-index: 1;
+}
+
+.blogger-btn::before{
+  position: absolute;
+  content: "";
+  background-image: url(../src/images/search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  top: 22px;
+  left: 20px;
+}
+
+.country{
+  position: relative;
+  z-index: 1;
+}
+
+.country::before{
+  position: absolute;
+  content: "";
+  background-image: url(../src/images/location-marker.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  left: -35px;
+}
+
+.lang-icon{
+  position: relative;
+  z-index: 1;
+}
+
+.lang-icon::before{
+  position: absolute;
+  content: "";
+  background-image: url(../src/images/translate-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  left: -40px;
+}
+
+.blogger-item{
+  position: relative;
+  z-index: 1;
+}
+
+.blogger-item::before{
+  position: absolute;
+  content: "";
+  background-image: url(../src/images/blogger-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 28px;
+  top: 25px;
+  left: 20px;
+}
+
+.hexagon {
+  width: 50px;
+  height: 47px;
+  background-color: #F7AC29;
+  justify-content: center;
+  clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
+  justify-content: center;
+}
+
+.hexagon span{
+  width: 45px;
+  height: 42px;
+  background-color: white;
+  justify-content: center;
+  clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.bookmark-title{
+  position: relative;
+  z-index: 1;
+}
+
+.bookmark-title::before{
+  position: absolute;
+  content: "";
+  background-image: url(../src/images/bookmark.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 28px;
+  top: 10px;
+  right: -20%;
 }
